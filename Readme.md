@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
 * Студент: [Алена Фотина](https://up.htmlacademy.ru/htmlcss/34/user/2049905).
-* Наставник: `Неизвестно`.
+* Наставник: [Евгений Котов](https://htmlacademy.ru/profile/evgeniy_kotov).
 
 ---
 
