@@ -259,6 +259,154 @@ nav {
 }
 
 
+/*CAUSES*/
+
+.best-causes p,
+.best-causes {
+  background-color: #82B3D3;
+  color: #ffffff;
+}
+
+.advantages-city,
+.causes-really-city,
+.more-causes-list,
+.causes-road-devil {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.advantages-item,
+.causes-text-container,
+.causes-item {
+  align-items: flex-start;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 95px 40px 80px 40px;
+  width: 400px;
+  text-align: center;
+  position: relative;
+  min-height: 382px;
+}
+
+.causes-img {
+  display: block;
+  width: 100%;
+  height: 100%;
+
+}
+
+.causes-item:nth-child(1),
+.causes-item:nth-child(3),
+.advantages-item:nth-child(1),
+.advantages-item:nth-child(3) {
+  background-color: rgba(131, 179, 211, 0.12);
+}
+
+.causes-item:nth-child(2) {
+  background-color: rgba(131, 179, 211, 0.2);
+  ;
+}
+
+.advantages-item {
+  padding: 185px 40px 80px 40px;
+}
+
+.advantages-item::before {
+  background-repeat: no-repeat;
+  top: 80px;
+  left: 160px;
+  content: "";
+  position: absolute;
+}
+
+.advantages-item-house::before {
+  background-image: url("../images/causes/advantage-living-icon.svg");
+  height: 72px;
+  width: 75px;
+}
+
+.advantages-item-eat::before {
+  background-image: url("../images/causes/advantage-food-icon.svg");
+  height: 72px;
+  width: 74px;
+}
+
+.advantages-item-gift::before {
+  background-image: url("../images/causes/advantage-souvenir-icon.svg");
+  height: 76px;
+  width: 75px;
+}
+
+/*OFFER*/
+
+.offer {
+  padding-top: 91px;
+  padding-bottom: 91px;
+  text-align: center;
+}
+
+.offer-text {
+  padding-top: 30px;
+  padding-bottom: 56px;
+}
+
+/*SUBSCRIBE*/
+.subscribe {
+  padding-top: 94px;
+  padding-bottom: 93px;
+  text-align: center;
+}
+
+.subscribe-background {
+  background-image: url("../images/background/mailing-background\ .jpg");
+}
+
+.subscribe-background .subscribe-box,
+.subscribe-background .subscribe-text {
+  color: #ffffff;
+}
+
+.subscribe-form {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  width: 800px;
+  margin: 0 auto;
+  margin-top: 46px;
+}
+
+.subscribe-text {
+  padding-top: 30px;
+}
+
+.field-input-email {
+  background-color: #F2F2F2;
+  border: none;
+  padding: 0;
+  padding-left: 22px;
+  padding-right: 14px;
+  border-radius: 10px 0 0 10px;
+  margin: 0;
+  font: inherit;
+  font-weight: 400;
+}
+
+/*FOOTER*/
+.footer-contacts {
+  padding-top: 47px;
+  padding-bottom: 35px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.social-list {
+  display: flex;
+  margin-left: 80px;
+  width: 120px;
+  justify-content: space-between;
+}
+
 .footer-contacts-phone {
   font-weight: 400;
   font-size: 40px;
@@ -268,12 +416,8 @@ nav {
   color: #000000;
 }
 
-.best-causes {
-  background-color: #82B3D3;
-  color: #ffffff;
-}
-.field-input-email{
-  background-color: #F2F2F2;
+.footer-logo {
+  margin-right: 70px;
 }
 
 .inner-header{
