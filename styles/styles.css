@@ -591,3 +591,142 @@ nav {
   background-color: #F2F2F2;
   text-transform: uppercase;
 }
+
+/*RESULTS SEARCH*/
+
+.results-hotel-search {
+  padding: 60px 71px;
+}
+
+.sorting-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.hotels-count {
+  margin-right: 190px;
+}
+
+.select-control {
+  padding-left: 20px;
+  font-family: inherit;
+  font-size: 18px;
+  line-height: 21px;
+  height: 48px;
+  color: #333333;
+  appearance: none;
+  background-image: url("../images/icon/arrow-down.svg");
+  background-repeat: no-repeat;
+  background-size: 12px 9px;
+  background-position: center right 20px;
+  border: 2px solid #E5E5E5;
+  border-radius: 4px;
+}
+
+.select-control-price {
+  width: 290px;
+  margin-right: 75px;
+}
+
+.select-hotel {
+  width: 160px;
+  margin-left: 50px;
+}
+
+.catalog-visual-type {
+  justify-content: space-between;
+  display: flex;
+  width: 160px;
+}
+
+.catalog-visual-type-toggle {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  width: 48px;
+  height: 48px;
+  border: 2px solid #e5e5e5;
+  border-radius: 4px;
+}
+
+.results-hotel-container {
+  padding: 75px 20px 60px 20px;
+  position: relative;
+  border-bottom: 1px solid;
+}
+
+.results-hotel-list {
+  list-style: none;
+  padding: 0;
+  margin: 0 auto;
+  display: grid;
+  row-gap: 32px;
+  grid-template-columns: repeat(3, 340px);
+  column-gap: 18px;
+
+}
+
+.hotel-card {
+  display: flex;
+  flex-direction: column;
+}
+
+.hotel-card-about {
+  display: grid;
+  grid-template-columns: 140px 140px;
+  column-gap: 20px;
+  row-gap: 16px;
+  justify-self: start;
+}
+
+.hotel-card-title {
+  margin-top: 12px;
+  margin-bottom: 15px;
+}
+
+.stars {
+  justify-content: left;
+  align-items: center;
+  display: flex;
+  width: 118px;
+}
+
+.stars-card {
+  background-image: url(../images/icon/star.svg);
+  background-position: center;
+  width: 18px;
+  height: 17px;
+  margin-right: 5px;
+}
+
+.raiting {
+  color: #333333;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  background-color: #F2F2F2;
+  text-transform: uppercase;
+}
+
+.pagination-container {
+  display: flex;
+  align-items: center;
+  margin-top: 30px;
+  justify-content: space-between;
+}
+
+.pagination {
+  display: flex;
+  justify-content: space-between;
+  width: 400px;
+}
+
+.pagination-link {
+  text-align: center;
+  display: block;
+  min-width: 60px;
+  height: 60px;
+  padding: 12px 10px;
+}
