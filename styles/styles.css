@@ -25,7 +25,7 @@ html {
 }
 
 body {
-  font-family: "PT Sans", Arial, sans-serif;
+  font-family: "PT Sans", sans-serif;
   font-size: 18px;
   line-height: 21px;
   background-color: #f2f2f2;
@@ -33,6 +33,7 @@ body {
   display: flex;
   flex-direction: column;
   min-height: 100%;
+  margin: 0;
 }
 
 .main-container {
@@ -41,7 +42,7 @@ body {
 
 .container {
   background-color: #ffffff;
-  box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
   width: 1200px;
   margin: 0 auto;
 }
@@ -55,6 +56,17 @@ body {
   border: 0;
   clip: rect(0 0 0 0);
   overflow: hidden;
+}
+
+.modal-form-input::-webkit-calendar-picker-indicator {
+  display: none;
+}
+.modal-form-input::-webkit-outer-spin-button,
+.modal-form-input::-webkit-inner-spin-button,
+.interval-input::-webkit-outer-spin-button,
+.interval-input::-webkit-inner-spin-button
+{
+  display: none;
 }
 
 /* BUTTONS */
