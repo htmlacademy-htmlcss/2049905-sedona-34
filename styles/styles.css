@@ -369,7 +369,7 @@ box-sizing: border-box;
   color: #333333;
 }
 
-/*CAUSES*/
+/* CAUSES */
 
 .best-causes p,
 .best-causes {
@@ -381,29 +381,41 @@ box-sizing: border-box;
 .causes-really-city,
 .more-causes-list,
 .causes-road-devil {
+  padding: 0;
+  margin: 0;
   display: flex;
   flex-wrap: wrap;
 }
-
 .advantages-item,
 .causes-text-container,
 .causes-item {
-  align-items: flex-start;
+  list-style-type: none;
   display: flex;
+  flex-direction: column;
   flex-wrap: wrap;
-  justify-content: center;
-  padding: 95px 40px 80px 40px;
+  padding: 92px 75px 80px 75px;
   width: 400px;
   text-align: center;
   position: relative;
-  min-height: 382px;
+  min-height: 384px;
+}
+
+.causes-item-title,
+.advantages-title {
+  text-transform: uppercase;
+}
+
+.advantages-item{
+  padding-top: 182px;
+}
+.causes-item{
+  padding-top: 102px;
 }
 
 .causes-img {
   display: block;
   width: 100%;
   height: 100%;
-
 }
 
 .causes-item:nth-child(1),
@@ -415,13 +427,7 @@ box-sizing: border-box;
 
 .causes-item:nth-child(2) {
   background-color: rgba(131, 179, 211, 0.2);
-  ;
 }
-
-.advantages-item {
-  padding: 185px 40px 80px 40px;
-}
-
 .advantages-item::before {
   background-repeat: no-repeat;
   top: 80px;
@@ -448,28 +454,39 @@ box-sizing: border-box;
   width: 75px;
 }
 
-/*OFFER*/
+.causes-item-count
+{
+  margin: 30px 0;
+}
+.advantages-text{
+  margin-top: 32px;
+}
+
+/* OFFER */
 
 .offer {
-  padding-top: 91px;
+  padding-top: 90px;
   padding-bottom: 91px;
   text-align: center;
 }
 
 .offer-text {
-  padding-top: 30px;
-  padding-bottom: 56px;
+  padding-top: 28px;
+  padding-bottom: 57px;
 }
 
-/*SUBSCRIBE*/
+/* SUBSCRIBE */
 .subscribe {
-  padding-top: 94px;
+  padding-top: 95px;
   padding-bottom: 93px;
   text-align: center;
 }
 
 .subscribe-background {
-  background-image: url("../images/background/mailing-background\ .jpg");
+  background-image: url("../images/background/mailing-background.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: #a7a2a2;
 }
 
 .subscribe-background .subscribe-box,
@@ -482,7 +499,7 @@ box-sizing: border-box;
   grid-template-columns: 1fr auto;
   width: 800px;
   margin: 0 auto;
-  margin-top: 46px;
+  margin-top: 45px;
 }
 
 .subscribe-text {
@@ -490,15 +507,24 @@ box-sizing: border-box;
 }
 
 .field-input-email {
+  padding: 0;
   background-color: #F2F2F2;
   border: none;
-  padding: 0;
   padding-left: 22px;
   padding-right: 14px;
   border-radius: 10px 0 0 10px;
   margin: 0;
-  font: inherit;
-  font-weight: 400;
+}
+
+.subscribe-button:hover {
+  background-color: #68A2CA;
+}
+
+.subscribe-button:active {
+  color: rgba(255, 255, 255, 0.3);
+}
+.subscribe-button:focus {
+  background-color: #68A2CA;
 }
 
 /*FOOTER*/
