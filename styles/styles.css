@@ -193,16 +193,16 @@ font-weight: 400;
 }
 
 
-/*HEADER*/
+/* HEADER */
 /* NAVIGATION */
 
-nav {
+.main-navigation{
   padding: 0 70px;
   display: flex;
   justify-content: space-between;
 }
-
 .main-navigation-logo {
+  margin: 0;
   position: absolute;
   z-index: 1;
 }
@@ -213,27 +213,54 @@ nav {
   justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
+  padding:0;
+  margin: 0;
 }
 
 .main-navigation-list {
+  list-style-type: none;
   margin-left: 185px;
   width: 310px;
-  padding: 20px 0;
+}
+.main-navigation-item {
+  padding: 19px 0;
+}
+.navigation-item-current{
+border-bottom: 2px solid #756257;
+box-sizing: border-box;
 }
 
 .user-option-list {
+  list-style-type: none;
   width: 255px;
 }
 
 .main-navigation-link,
 .catalog-filter-title {
+  text-decoration: none;
   font-weight: 700;
   font-size: 20px;
   line-height: 26px;
   color: #000000;
 }
 
+.main-navigation-link:hover {
+  opacity: 0.6;
+}
+
+.main-navigation-link:active {
+  opacity: 0.3;
+  outline: none;
+}
+
+.user-option-link:hover .user-option-icon {
+  fill: rgba(0, 0, 0, 0.6);
+}
+.user-option-link:active .user-option-icon {
+  fill: rgba(0, 0, 0, 0.3);
+}
 .user-option-link-like {
+  margin-left: -6px;
   position: relative;
 }
 
@@ -252,8 +279,19 @@ nav {
   line-height: 13px;
   color: #ffffff;
 }
+.user-option-button:active{
+  background-color: #615048;
+  color: rgba(255, 255, 255, 0.3);
+}
+.user-option-button:hover{
+  background-color: #615048;
+}
+.user-option-button:focus{
+  background-color: #615048;
+}
 
-/*WELCOME*/
+
+/* WELCOME */
 .welcome {
   position: relative;
   max-height: 485px;
@@ -279,30 +317,32 @@ nav {
   background-size: 100% 100%;
 }
 
-/*CAUSES - tagline*/
+/* CAUSES - tagline */
 .causes-top-container {
   padding-top: 62px;
   padding-bottom: 90px;
   text-align: center;
 }
 
-.causes-text {
-  margin-top: 30px;
-}
-
 .causes-title,
 .offer-title,
 .subscribe-title,
-.hotels-count {
+.hotels-count,
+.modal-title {
+  margin: 0;
   font-weight: 700;
   font-size: 30px;
   line-height: 36px;
   text-transform: uppercase;
 }
+.causes-title{
+  margin-bottom: 31px;
+}
 
 .causes-text,
 .offer-text,
 .subscribe-text {
+  margin: 0;
   font-weight: 400;
   font-size: 22px;
   line-height: 26px;
@@ -312,14 +352,11 @@ nav {
 .causes-item-title,
 .advantages-title,
 .hotel-card-link-title {
+  margin: 0;
+  text-decoration: none;
   font-weight: 700;
   font-size: 24px;
   line-height: 28px;
-}
-
-.causes-item-title,
-.advantages-title {
-  text-transform: uppercase;
 }
 
 .causes-item-text,
@@ -327,10 +364,10 @@ nav {
 .hotel-type,
 .hotel-card-price,
 .show-hotels {
+  margin: 0;
   font-weight: 400;
   color: #333333;
 }
-
 
 /*CAUSES*/
 
