@@ -527,7 +527,7 @@ box-sizing: border-box;
   background-color: #68A2CA;
 }
 
-/*FOOTER*/
+/* FOOTER */
 .footer-contacts {
   padding-top: 47px;
   padding-bottom: 35px;
@@ -537,13 +537,16 @@ box-sizing: border-box;
 }
 
 .social-list {
+  list-style-type: none;
   display: flex;
-  margin-left: 80px;
-  width: 120px;
+  margin: 0 0 0 82px;
+  width: 118px;
   justify-content: space-between;
+  padding: 0;
 }
 
 .footer-contacts-phone {
+  margin-left: 12px;
   font-weight: 400;
   font-size: 40px;
   line-height: 40px;
@@ -554,6 +557,54 @@ box-sizing: border-box;
 
 .footer-logo {
   margin-right: 70px;
+}
+.social-link:focus {
+  outline: none;
+}
+.social-link-logo {
+  fill: #83B3D3;
+}
+
+.social-link:hover .social-link-logo,
+.social-link:focus .social-link-logo
+{
+  fill: #68A2CA;
+}
+.social-link:active .social-link-logo
+{
+  fill: rgba(104, 162, 202, 0.3);
+}
+
+.footer-contacts-phone:hover
+{
+  color: #756157;
+}
+
+.footer-contacts-phone:focus {
+  color: #756157;
+  outline: none;
+}
+
+.footer-contacts-phone:active {
+  color: rgba(117, 97, 87, 0.3);
+}
+
+.footer-logo-icon {
+  fill: #000000;
+}
+
+.footer-logo:hover .footer-logo-icon,
+.footer-logo:focus .footer-logo-icon
+{
+  fill: #756157;
+}
+
+.footer-logo:focus {
+  outline: none;
+}
+
+.footer-logo:active .footer-logo-icon {
+  fill: rgba(117, 97, 87, 0.3);
 }
 
 /*FILTERS*/
