@@ -546,20 +546,24 @@ body {
   padding-bottom: 35px;
   display: flex;
   align-items: center;
-  justify-content: space-between;
 }
-
+.social-network{
+  min-width: 300px;
+  padding-left: 81px;
+}
 .social-list {
   list-style-type: none;
   display: flex;
-  margin: 0 0 0 82px;
+  margin: 0;
   width: 118px;
   justify-content: space-between;
   padding: 0;
 }
-
+.footer-contacts-address{
+  min-width: 600px;
+  text-align: center;
+}
 .footer-contacts-phone {
-  margin-left: 12px;
   font-weight: 400;
   font-size: 40px;
   line-height: 40px;
@@ -569,7 +573,9 @@ body {
 }
 
 .footer-logo {
-  margin-right: 70px;
+  min-width: 300px;
+  padding-right: 70px;
+  padding-left: 115px;
 }
 
 .social-link:focus {
@@ -1028,7 +1034,7 @@ body {
 }
 
 .results-hotel-container {
-  padding: 65px 25px 85px 20px;
+  padding: 65px 21px 85px 20px;
   position: relative;
   border-bottom: 1px solid #E6E6E6;
 }
@@ -1039,13 +1045,17 @@ body {
   margin: 0 auto;
   display: grid;
   row-gap: 40px;
-  grid-template-columns: repeat(3, 340px);
-  column-gap: 18px;
+  grid-template-columns: repeat(3, 300px);
+  column-gap: 58px;
 }
 
 .hotel-card {
   display: flex;
   flex-direction: column;
+  align-items:center;
+}
+.hotel-card-title {
+  align-self: normal;
 }
 
 .button-like-favorite {
