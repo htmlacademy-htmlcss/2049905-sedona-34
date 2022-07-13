@@ -856,6 +856,7 @@ body {
 }
 
 .interval-input {
+  border: 2px solid #FFFFFF;
   font-size: 18px;
   line-height: 23px;
   background-color: transparent;
@@ -866,47 +867,53 @@ body {
   appearance: textfield;
   position: relative;
   z-index: 10;
+  outline: none;
 }
 
-.interval-input-min-mark::before {
+.interval-input-min-mark::after {
   content: "от";
   position: absolute;
   left: 100px;
   top: 12px;
   opacity: 0.3;
+  z-index: 10;
 }
 
-.interval-input-max-mark::before {
+.interval-input-max-mark::after {
   content: "до";
   position: absolute;
   right: 16px;
   top: 12px;
   opacity: 0.3;
+  z-index: 10;
 }
 
 .interval-input-min {
+  border-right: 1px solid #FFFFFF;
   border-radius: 4px 0 0 4px;
-  border: 2px solid #ffffff;
 }
 
 .interval-input-max {
   border-radius: 0 4px 4px 0;
-  border: 2px solid #ffffff;
-  border-left: none;
+  border-left: 1px solid #FFFFFF;
 }
 
 .interval-input:hover {
-  border: 2px solid rgba(255, 255, 255, 0.6);
+  border-color: rgba(255, 255, 255, 0.6);
+  z-index: 11;
 }
 
 .interval-input:focus {
-  border: 2px solid rgba(131, 179, 211, 1);
-  outline: 2px solid white;
+  border-color: #ffffff;
+  box-shadow: 0 0 0 3px #81B3D2,
+  inset 0 0 0 3px #81b3d2;
 }
 
 .interval-input:active {
-  border: 2px solid rgba(255, 255, 255);
   background-color: rgba(117, 98, 87, 1);
+  border-color: #ffffff;
+  z-index: 9;
+  box-shadow: none;
 }
 
 .interval {
