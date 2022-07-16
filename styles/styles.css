@@ -166,15 +166,18 @@ body {
   background-image: url("../images/icon/arrow-down.svg");
   background-repeat: no-repeat;
   background-size: 12px 9px;
+	background-color: #ffffff;
   background-position: center right 20px;
   border: none;
   outline: 2px solid #E5E5E5;
   border-radius: 4px;
   appearance: none;
   cursor: pointer;
+  line-height: 44px;
 }
 
-.select-control:hover {
+.select-control:hover
+{
   outline: 2px solid #68A2CA;
 }
 
@@ -403,7 +406,7 @@ body {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
-  padding: 92px 75px 80px 75px;
+  padding: 92px 80px 80px 80px;
   width: 400px;
   text-align: center;
   position: relative;
@@ -477,8 +480,7 @@ body {
 /* OFFER */
 
 .offer {
-  padding-top: 90px;
-  padding-bottom: 91px;
+  padding: 90px 200px 91px 200px;
   text-align: center;
 }
 
@@ -526,6 +528,18 @@ body {
   padding-right: 14px;
   border-radius: 10px 0 0 10px;
   margin: 0;
+}
+
+.field-input-email:hover
+{
+  background-color: #E6E6E6;
+}
+
+.field-input-email:focus,
+.field-input-email:active
+{
+  background-color: #E6E6E6;
+  outline: 3px solid #83B3D3;
 }
 
 .subscribe-button:hover {
@@ -669,7 +683,7 @@ body {
   margin-right: 25px;
 }
 
-.breadcrumbs-item::after {
+.breadcrumbs-item::before {
   content: url(../images/icon/arrow-right.svg);
   position: absolute;
   width: 8px;
@@ -677,7 +691,7 @@ body {
   left: 22px;
 }
 
-.breadcrumbs-item:last-child::after {
+.breadcrumbs-item:last-child::before {
   content: none;
 }
 
@@ -984,20 +998,21 @@ body {
 }
 
 .hotels-count {
-  margin-right: 189px;
-}
-
-.show-hotels {
-  margin-right: 48px;
+  width: 400px;
+  word-wrap: break-word;
 }
 
 .select-control-price {
+  margin-left: 50px;
   min-width: 287px;
-  margin-right: 82px;
 }
 
 .select-hotel {
   min-width: 158px;
+}
+
+.show-hotels {
+  margin-right: 50px;
 }
 
 .catalog-visual-type {
@@ -1261,16 +1276,19 @@ body {
   background-position: center right 19px;
 }
 
-.modal-form-input:hover {
+.modal-form-input:hover
+{
   background-color: #E6E6E6;
 }
 
-.modal-form-input:focus {
+.modal-form-input:focus
+{
   background-color: #E6E6E6;
   outline: 3px solid #83B3D3;
 }
 
-.modal-form-input:active {
+.modal-form-input:active
+{
   background-color: #ffffff;
   outline: 3px solid #000000;
 }
