@@ -426,10 +426,12 @@ body {
   padding-top: 102px;
 }
 
+.causes-img-container{
+  width: 800px;
+}
 .causes-img {
-  display: block;
-  width: 100%;
-  height: 100%;
+  max-width: 100%;
+  object-fit: contain;
 }
 
 .causes-item:nth-child(1),
@@ -1076,8 +1078,15 @@ body {
   flex-direction: column;
   align-items:center;
 }
-.hotel-card-title {
-  align-self: normal;
+
+.hotel-card-link{
+  height: 211px;
+}
+
+.hotel-card-link img{
+  max-width: 100%;
+  object-fit: cover;
+  height: inherit;
 }
 
 .button-like-favorite {
@@ -1106,7 +1115,8 @@ body {
 }
 
 .hotel-card-title {
-  margin-top: 12px;
+  align-self: normal;
+  margin-top: 17px;
   margin-bottom: 15px;
 }
 
