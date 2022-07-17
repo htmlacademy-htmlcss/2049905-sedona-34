@@ -428,7 +428,8 @@ body {
 
 .causes-img {
   max-width: 800px;
-  object-fit: contain;
+  object-fit: cover;
+  height: inherit; 
 }
 
 .causes-item:nth-child(1),
