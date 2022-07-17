@@ -426,13 +426,8 @@ body {
   padding-top: 102px;
 }
 
-.causes-img-container{
-  width: 800px;
-  height: auto;
-}
 .causes-img {
-  display: block;
-  max-width: 100%;
+  max-width: 800px;
   object-fit: contain;
 }
 
